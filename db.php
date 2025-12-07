@@ -1,8 +1,8 @@
 <?php
 
 $servername = "127.0.0.1";
-$username = "f4tum";
-$password = "pass";
+$username = "root";
+$password = "kali";
 $dbName = "first";
 
 $link = mysqli_connect($servername, $username, $password);
@@ -23,7 +23,7 @@ $link = mysqli_connect($servername, $username, $password, $dbName);
 
 $sql = "CREATE TABLE IF NOT EXISTS users(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL,
+    username VARCHAR(15) NOT NULL,
     email VARCHAR(50) NOT NULL,
     pass VARCHAR(50) NOT NULL
 )";
